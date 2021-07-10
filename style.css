@@ -1,0 +1,273 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+ul,li{
+    margin-bottom: 0;
+    padding: 0;
+}
+.section-bg{
+    background-color: #f7f8fc;
+}
+body{
+
+        overflow-x: hidden;
+}
+
+
+
+
+/* header css */
+
+.header-top {
+    background: linear-gradient(139deg, #0f8bd2,#215cb9, #2e36a4);
+    color: white;
+    padding: 6px;
+}
+.top-left-content {
+    line-height: 39px;
+}
+ul.header-top-menu {
+    text-align: right;
+    line-height: 37px;
+}
+ul.header-top-menu li a {
+    color: white;
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+span.location {
+    margin-right: 20px;
+    font-size: 14px;
+}
+.borderline {
+    position: relative;
+}
+.borderline:after {
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: 1px;
+    width: 1px;
+    height: 17px;
+    background: #e8e8e8;
+}
+li i.flaticon-send {
+    margin-left: 20px;
+}
+ul.header-top-menu li{
+    position: relative;
+}
+ul.header-top-menu li:after {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    width: 1px;
+    height: 17px;
+    background: white;
+}
+
+
+/* main-header css */
+img.logo {
+    width: 120px;
+    margin-top: 18px;
+}
+
+.primary-menu ul li a {
+    padding: 0 17px;
+    color: #2f2b2b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 37px;
+}
+.primary-menu ul li:hover > a{
+   color: #0e58da;
+}
+.primary-menu ul li a span i {
+    font-size: 11px;
+    font-weight: bold;
+    color: #2f2b2b;
+    margin-left: 4px;
+}
+.search-icon {
+	margin-left: 23px;
+	font-size: 22px;
+	color: #0c59db;
+}
+.humberger-icon {
+    position: relative;
+	width: 50px;
+	background: transparent;
+    cursor: pointer;
+}
+.humberger-icon:hover .dash1::after,.humberger-icon:hover .dash2::after,.humberger-icon:hover .dash3::after {
+    width: 35px;
+    cursor: pointer;
+}
+.dash1::after {
+	position: absolute;
+	right: 0;
+	top: 6px;
+	width: 20px;
+	height: 3px;
+	background: #2369de;
+	content: "";
+    border-radius:10px;
+    transition: .3s;
+}
+
+.dash2::after {
+	position: absolute;
+	right: 0;
+	top: 14px;
+	width: 28px;
+	height: 1.5px;
+	background: #2369de;
+	content: "";
+    transition: .3s;
+}
+.dash3::after {
+	position: absolute;
+	right: 0;
+	top: 20px;
+	width: 20px;
+	height: 1.5px;
+	background: #2369de;
+	content: "";
+    transition: .3s;
+}
+
+
+/* responsive menu */
+
+.fas.fa-times.class2 {
+        border: 1px solid #2c3ba7;
+        padding: 6px 16px;
+        border-radius: 5px;
+        display: none;
+    }
+
+
+
+
+
+
+
+
+.primary-menu ul {
+    margin-top: 13px;
+}
+/* dropsown css */
+.primary-menu ul li {
+    position: relative;
+}
+.primary-menu ul li ul {
+    background: #ecf0f9;
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    top: 149%;
+    left: 11px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform:scaley(0);
+    transform-origin: top;
+}
+.primary-menu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+.primary-menu ul li ul li {
+    border-bottom: 1px solid #e0e4ed;
+   
+}
+.primary-menu ul li ul li:last-child{
+   border:none;
+}
+.primary-menu ul li ul li a {
+    font-size: 14px;
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: .3s;   
+}
+.primary-menu ul li ul li:hover > a{
+    color: white;
+    background-color: #0e58da;
+    padding-left: 20px;
+}
+.primary-menu ul li ul li a i{
+    transition: .3s;
+}
+.primary-menu ul li ul li a:hover i{
+    color: white;
+}
+/* 3rd ul */
+.primary-menu ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 999;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.primary-menu ul li ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+span.crose-icon {
+    font-size: 24px;
+    color: #2648bd;
+    border: 1px solid #ddd;
+    padding: 0px 17px;
+    border-radius: 6px;
+    
+}
+span.crose-icon {
+    font-size: 24px;
+    color: #2648bd;
+    border: 1px solid #ddd;
+    padding: 0px 17px;
+    border-radius: 6px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    pointer-events: none;
+}
+span.crose-icon:hover {
+    opacity: 0;
+}
+
+
+/* slider section */
+section.slider-section .carousel-inner {
+    height: 700px;
+}
+.banner-content{
+    text-align: left;
+    position: relative;
+    top: -102%;
+    left: -109px;
+}
+                                                                                                                                                                                                                                                      
